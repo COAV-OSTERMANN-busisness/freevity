@@ -35,12 +35,12 @@ export const messages = {
           "Calculate your landed cost with a clear and consistent freight calculation workflow.",
         cta: "Calculate Landed Cost",
         summary: {
-          title: "Landed Cost Summary",
-          freight: "Freight",
-          insurance: "Insurance",
-          customs: "Customs",
-          handling: "Handling",
-          total: "Total",
+          title: "Freight Estimate",
+          freight: "Base Freight",
+          insurance: "Fuel Surcharge",
+          customs: "Toll Charges",
+          handling: "Additional Handling",
+          total: "Total Freight",
           freightValue: "$1,200.00",
           insuranceValue: "$180.00",
           customsValue: "$350.00",
@@ -52,7 +52,7 @@ export const messages = {
       howItWorks: {
         title: "How freevity works",
         description:
-          "Simulate your transportation costs in a few simple steps.",
+          "Estimate your freight in a few simple steps.",
         steps: {
           one: {
             title: "Enter your shipment",
@@ -359,12 +359,12 @@ export const messages = {
           "Calcula tu costo puesto en destino con un flujo de cálculo de flete claro y consistente.",
         cta: "Calcular Costo Puesto en Destino",
         summary: {
-          title: "Resumen del Costo Puesto en Destino",
-          freight: "Flete",
-          insurance: "Seguro",
-          customs: "Aduanas",
-          handling: "Manipulación",
-          total: "Total",
+          title: "Estimación de Flete",
+          freight: "Flete base",
+          insurance: "Recargo por combustible",
+          customs: "Peajes",
+          handling: "Manipulación adicional",
+          total: "Flete total",
           freightValue: "€1,200.00",
           insuranceValue: "€180.00",
           customsValue: "€350.00",
@@ -375,7 +375,7 @@ export const messages = {
 
       howItWorks: {
         title: "Cómo funciona freevity",
-        description: "Simula tus costos de transporte en unos simples pasos.",
+        description: "Estima tu flete en unos sencillos pasos.",
         steps: {
           one: {
             title: "Ingresa tu envío",
@@ -682,12 +682,12 @@ export const messages = {
           "Calcule seu frete com um fluxo de cálculo claro e consistente.",
         cta: "Calcular Frete",
         summary: {
-          title: "Resumo do Cálculo de Frete",
-          freight: "Frete",
-          insurance: "Seguro",
-          customs: "Alfândega",
-          handling: "Manuseio",
-          total: "Total",
+          title: "Estimativa de Frete",
+          freight: "Frete base",
+          insurance: "Adicional de combustível",
+          customs: "Pedágios",
+          handling: "Manuseio adicional",
+          total: "Frete total",
           freightValue: "R$ 1.200,00",
           insuranceValue: "R$ 180,00",
           customsValue: "R$ 350,00",
@@ -699,7 +699,7 @@ export const messages = {
       howItWorks: {
         title: "Como o freevity funciona",
         description:
-          "Simule seus custos de transporte em poucos passos simples.",
+          "Estime seu frete em poucos passos simples.",
         steps: {
           one: {
             title: "Informe sua remessa",
@@ -1004,12 +1004,12 @@ export const messages = {
           "明確で一貫したフレート計算ワークフローで着地原価を計算します。",
         cta: "着地原価を計算",
         summary: {
-          title: "着地原価サマリー",
-          freight: "フレート",
-          insurance: "保険",
-          customs: "関税",
-          handling: "ハンドリング",
-          total: "合計",
+          title: "運賃見積もり",
+          freight: "基本運賃",
+          insurance: "燃料サーチャージ",
+          customs: "通行料金",
+          handling: "追加荷役費",
+          total: "運賃合計",
           freightValue: "¥1,200",
           insuranceValue: "¥180",
           customsValue: "¥350",
@@ -1020,7 +1020,7 @@ export const messages = {
 
       howItWorks: {
         title: "freevityの仕組み",
-        description: "簡単なステップで輸送コストをシミュレーションできます。",
+        description: "簡単なステップで運賃を見積もれます。",
         steps: {
           one: {
             title: "出荷情報を入力",
@@ -1040,7 +1040,7 @@ export const messages = {
         result: {
           title: "意思決定のための明確な見積もり",
           description:
-            "freevityのシミュレーションを使って、輸送・物流コストをより明確に把握できます。",
+            "freevityの見積もりを使って、貨物の予想運賃を把握できます。",
         },
       },
       features: {

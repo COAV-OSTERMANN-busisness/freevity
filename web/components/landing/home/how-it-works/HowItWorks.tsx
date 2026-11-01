@@ -14,16 +14,19 @@ interface HowItWorksProps {
 const steps = [
   {
     key: "one",
+    number: "01",
     icon: faBoxOpen,
     side: "left",
   },
   {
     key: "two",
+    number: "02",
     icon: faCoins,
     side: "right",
   },
   {
     key: "three",
+    number: "03",
     icon: faCalculator,
     side: "left",
   },
@@ -58,58 +61,52 @@ export function HowItWorks({ locale }: HowItWorksProps) {
           <div className="flex flex-col gap-8 md:gap-10">
             {steps.map((step) => {
               const card = (
-                <article className="rounded-2xl border border-[var(--brand-primary-light)] bg-[var(--brand-primary-dark)] p-6 shadow-lg">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--surface)]">
-                    <FontAwesomeIcon
-                      icon={step.icon}
-                      aria-hidden="true"
-                      className="h-5 w-5 text-[var(--brand-primary)]"
-                    />
-                  </div>
+                <article className="rounded-2xl border border-[var(--brand-primary-light)] bg-[var(--brand-primary-dark)] p-6 shadow-lg transition-transform duration-200 hover:-translate-y-1">
+                  <span className="text-sm font-bold tracking-[0.2em] text-[var(--brand-primary-bright)]">
+                    {step.number}
+                  </span>
 
-                  <h3 className="mt-5 text-xl font-bold text-[var(--surface)]">
+                  <h3 className="mt-3 text-xl font-bold text-[var(--surface)]">
                     {translate(
                       locale,
-                      `landing.howItWorks.steps.${step.key}.title`,
+                      `landing.howItWorks.steps.${step.key}.title`
                     )}
                   </h3>
 
                   <p className="mt-3 text-sm leading-6 text-[var(--surface)]">
                     {translate(
                       locale,
-                      `landing.howItWorks.steps.${step.key}.description`,
+                      `landing.howItWorks.steps.${step.key}.description`
                     )}
                   </p>
                 </article>
               );
 
-   const node = (
-  <div className="relative z-10 hidden items-center justify-center md:flex">
-    <div className="flex h-14 w-14 items-center justify-center rounded-full border-4 border-[var(--brand-primary-deep)] bg-[var(--surface)] shadow-lg">
-      <FontAwesomeIcon
-        icon={step.icon}
-        aria-hidden="true"
-        className="h-5 w-5 text-[var(--brand-primary)]"
-      />
-    </div>
-  </div>
-);
+              const node = (
+                <div
+                  aria-hidden="true"
+                  className="relative z-10 hidden items-center justify-center md:flex"
+                >
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full border-4 border-[var(--brand-primary-deep)] bg-[var(--surface)] shadow-lg">
+                    <FontAwesomeIcon
+                      icon={step.icon}
+                      className="h-5 w-5 text-[var(--brand-primary-bright)]"
+                    />
+                  </div>
+                </div>
+              );
 
               return (
                 <div
-  key={step.key}
-  className="grid gap-5 md:grid-cols-[1fr_5rem_1fr] md:items-center"
->
-  <div>
-    {step.side === "left" && card}
-  </div>
+                  key={step.key}
+                  className="grid gap-5 md:grid-cols-[1fr_5rem_1fr] md:items-center"
+                >
+                  <div>{step.side === "left" && card}</div>
 
-  {node}
+                  {node}
 
-  <div>
-    {step.side === "right" && card}
-  </div>
-</div>
+                  <div>{step.side === "right" && card}</div>
+                </div>
               );
             })}
           </div>

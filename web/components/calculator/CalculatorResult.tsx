@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect } from "react";
+
 import { messages } from "@/lib/i18n/messages";
 
 import { useI18n } from "@/components/providers/i18n";
@@ -54,6 +56,36 @@ export function CalculatorResult({
   result,
 }: CalculatorResultProps) {
   const { locale } = useI18n();
+
+  useEffect(() => {
+    const sendResultSharedMetric = async () => {
+      try {
+        const response = await fetch("/api/metrics", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ event: "result_shared" }),
+          cache: "no-store",
+          keepalive: true,
+        });
+
+        if (!response.ok) {
+          console.error(
+            "[Operational Metrics] Failed to record result_shared:",
+            response.status,
+          );
+        }
+      } catch (error) {
+        console.error(
+          "[Operational Metrics] Error recording result_shared:",
+          error,
+        );
+      }
+    };
+
+    void sendResultSharedMetric();
+  }, [result]);
 
   /*
    * Freight Calculator result.

@@ -1,8 +1,8 @@
-# Frevity Calculation Module — Implementation Guide
+# freevity Calculation Module — Implementation Guide
 
 ## 1. Purpose
 
-The `calculation` module is the mathematical and domain core of Frevity.
+The `calculation` module is the mathematical and domain core of freevity.
 
 Its responsibility is to represent shipment/cargo data, represent logistics cost components, calculate derived costs and metrics, and produce a final landed-cost result.
 
@@ -1594,4 +1594,4 @@ FORMATTING
 UI
 ```
 
-This separation keeps the Frevity calculation core testable, understandable and reusable as the product evolves.
+This separation keeps the freevity calculation core testable, understandable and reusable as the product evolves.

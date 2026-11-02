@@ -1,18 +1,18 @@
-# Frevity — Trello Execution Plan
+# freevity — Trello Execution Plan
 
-> **Project:** Frevity  
+> **Project:** freevity  
 > **Product:** Landed Cost / Freight Reality Calculator  
 > **MVP:** v0.1.0  
 > **Execution window:** Saturday 29/08/2026 → Sunday 30/08/2026  
 > **Package manager:** npm  
 > **Frontend:** Next.js + React + TypeScript + Tailwind CSS  
-> **Production target:** `frevity.com`
+> **Production target:** `freevity.com`
 
 ---
 
 # 1. Document Purpose
 
-This document is the operational baseline for the two Frevity MVP sprints already defined in Trello.
+This document is the operational baseline for the two freevity MVP sprints already defined in Trello.
 
 It exists to recover the project plan if implementation is interrupted, context is lost, or a technical decision needs to be checked against the original delivery objective.
 
@@ -52,7 +52,7 @@ No additional sprint is part of the current MVP plan.
 
 ## 3.1 MVP objective
 
-Frevity is a global web calculator intended to help users estimate the real landed cost of freight/logistics operations.
+freevity is a global web calculator intended to help users estimate the real landed cost of freight/logistics operations.
 
 The MVP consists of two primary pages:
 
@@ -147,7 +147,7 @@ npm run build
 
 ### Objective
 
-Implement the architectural structure defined in the Frevity architecture document.
+Implement the architectural structure defined in the freevity architecture document.
 
 ### Tasks
 
@@ -196,7 +196,7 @@ Commit messages must be written in English.
 Example:
 
 ```text
-chore: initialize Frevity project
+chore: initialize freevity project
 ```
 
 ### Acceptance Criteria
@@ -208,7 +208,7 @@ chore: initialize Frevity project
 
 ---
 
-## Card 04 — Frevity Design System
+## Card 04 — freevity Design System
 
 **Priority:** High  
 **Target:** 29/08  
@@ -269,11 +269,11 @@ Gradient:
 
 ---
 
-## Card 05 — Frevity Brand Assets
+## Card 05 — freevity Brand Assets
 
 **Priority:** High  
 **Target:** 29/08  
-**Dependency:** Frevity Design System
+**Dependency:** freevity Design System
 
 ### Objective
 
@@ -480,7 +480,7 @@ Browser APIs
 
 ### Objective
 
-Generate the Frevity Reality Score from the calculated logistics/cost information.
+Generate the freevity Reality Score from the calculated logistics/cost information.
 
 ### Tasks
 
@@ -825,7 +825,7 @@ Finish the global user experience, SEO, monetization/measurement foundation, qua
 
 The end-of-day objective is:
 
-> **Frevity must be publicly accessible as a functional, responsive, multilingual production MVP.**
+> **freevity must be publicly accessible as a functional, responsive, multilingual production MVP.**
 
 ---
 
@@ -970,7 +970,7 @@ GPS/location permission is not required to determine the interface language.
 
 ### Objective
 
-Make Frevity discoverable through search engines.
+Make freevity discoverable through search engines.
 
 ### Tasks
 
@@ -1035,7 +1035,7 @@ Provide machine-readable context where appropriate.
 
 ### Objective
 
-Keep Frevity fast enough for a global audience.
+Keep freevity fast enough for a global audience.
 
 ### Review
 
@@ -1258,7 +1258,7 @@ Connect the global `.com` domain.
 Target:
 
 ```text
-frevity.com
+freevity.com
 ```
 
 ### Tasks
@@ -1272,7 +1272,7 @@ frevity.com
 ### Acceptance Criteria
 
 ```text
-https://frevity.com
+https://freevity.com
 ```
 
 loads successfully.
@@ -1292,7 +1292,7 @@ Verify the actual production environment rather than localhost.
 ### Critical flow
 
 ```text
-frevity.com
+freevity.com
     ↓
 Landing
     ↓
@@ -1372,7 +1372,7 @@ Perform the final product-level review.
 ### Review questions
 
 ```text
-Can a new user understand Frevity?
+Can a new user understand freevity?
 Can the user reach the calculator?
 Can the user complete a calculation?
 Can the user understand the result?
@@ -1398,7 +1398,7 @@ The MVP is considered product-ready.
 
 ### Objective
 
-Officially release Frevity v0.1.0.
+Officially release freevity v0.1.0.
 
 ### Tasks
 
@@ -1418,13 +1418,13 @@ v0.1.0
 ### Suggested English release commit
 
 ```text
-release: Frevity v0.1.0
+release: freevity v0.1.0
 ```
 
 ### Acceptance Criteria
 
 ```text
-https://frevity.com
+https://freevity.com
 ```
 
 is functional and represents the approved MVP.
@@ -1732,7 +1732,7 @@ A delayed card is not automatically a failed project.
 
 The dangerous situation is allowing a delayed card to become **open-ended technical debt**.
 
-For Frevity, the cost of postponing unfinished MVP work increases quickly because the application is being released as a public global product.
+For freevity, the cost of postponing unfinished MVP work increases quickly because the application is being released as a public global product.
 
 An unfinished:
 
@@ -1756,7 +1756,7 @@ The objective is to **close the gap between planned delivery and actual producti
 
 # 13. Final Delivery Principle
 
-The weekend is successful only when Frevity moves from:
+The weekend is successful only when freevity moves from:
 
 ```text
 Code
@@ -1785,7 +1785,7 @@ Production Build
     ↓
 Production Environment
     ↓
-frevity.com
+freevity.com
     ↓
 Real Users
     ↓
@@ -1798,7 +1798,7 @@ The MVP does not need to contain every future feature.
 
 It needs to prove that the central proposition works:
 
-> **A user can use Frevity to estimate the real landed cost of a freight operation quickly and understand the result.**
+> **A user can use freevity to estimate the real landed cost of a freight operation quickly and understand the result.**
 
 ---
 
@@ -1843,9 +1843,9 @@ RELEASE
 # 15. Release Target
 
 ```text
-Product: Frevity
+Product: freevity
 Version: v0.1.0
-Domain: https://frevity.com
+Domain: https://freevity.com
 
 Sprint 01:
 29/08/2026

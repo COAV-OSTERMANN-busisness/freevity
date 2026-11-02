@@ -1,21 +1,21 @@
 <div align="center">
 
-<img src="https://firebasestorage.googleapis.com/v0/b/freevity-2a20f.firebasestorage.app/o/Logo%2Flogo-icon.png?alt=media&token=681ff8bd-428e-41e3-9475-caadd3a1a3d0" alt="Frevity Logo Icon" width="120">
+<img src="https://firebasestorage.googleapis.com/v0/b/freevity-2a20f.firebasestorage.app/o/Logo%2Flogo-icon.png?alt=media&token=681ff8bd-428e-41e3-9475-caadd3a1a3d0" alt="freevity Logo Icon" width="120">
 
 <br>
 
-<img src="https://firebasestorage.googleapis.com/v0/b/freevity-2a20f.firebasestorage.app/o/Logo%2Ftextual-logo.png?alt=media&token=d805e598-7e04-4899-a6d5-dd6bc327561d" alt="Frevity" width="260">
+<img src="https://firebasestorage.googleapis.com/v0/b/freevity-2a20f.firebasestorage.app/o/Logo%2Ftextual-logo.png?alt=media&token=d805e598-7e04-4899-a6d5-dd6bc327561d" alt="freevity" width="260">
 
 </div>
 
-# Frevity
+# freevity
 
-Frevity is a web application project whose MVP combines a public landing
+freevity is a web application project whose MVP combines a public landing
 surface with a dedicated calculator application surface.
 
 ## Project Objective
 
-The MVP establishes the foundation for Frevity and prioritizes:
+The MVP establishes the foundation for freevity and prioritizes:
 
 -   a coherent application architecture;
 -   a stable project structure;
@@ -80,10 +80,10 @@ Exact dependency versions are defined in `web/package.json`.
 ## Repository Structure
 
 ``` text
-frevity/
+freevity/
 ├── arqc/
-│   ├── Frevity-Application-Architecture.md
-│   └── Frevity-Trello-Plan-2-Sprints.md
+│   ├── freevity-Application-Architecture.md
+│   └── freevity-Trello-Plan-2-Sprints.md
 │
 └── web/
     ├── app/
@@ -173,7 +173,7 @@ coupling the calculation domain to UI-specific behavior.
 
 ## Rendering Strategy
 
-Frevity follows a **static-first hybrid rendering strategy**:
+freevity follows a **static-first hybrid rendering strategy**:
 
 -   content without runtime interaction should prefer static/server
     rendering;
@@ -184,7 +184,7 @@ Frevity follows a **static-first hybrid rendering strategy**:
 
 ## Deployment and Domain Management
 
-Frevity separates application deployment from domain registration and DNS
+freevity separates application deployment from domain registration and DNS
 management.
 
 The current production infrastructure responsibilities are:
@@ -198,7 +198,7 @@ The current production infrastructure responsibilities are:
 
 ### Netlify
 
-Netlify is responsible for hosting and deploying the Frevity web
+Netlify is responsible for hosting and deploying the freevity web
 application.
 
 The production deployment is connected to the project repository and
@@ -233,14 +233,14 @@ fix/*
 
 ### Application Architecture
 
-`arqc/Frevity-Application-Architecture.md`
+`arqc/freevity-Application-Architecture.md`
 
 Defines the approved architecture, boundaries, responsibilities,
 structural decisions, and architectural rationale.
 
 ### Trello Planning
 
-`arqc/Frevity-Trello-Plan-2-Sprints.md`
+`arqc/freevity-Trello-Plan-2-Sprints.md`
 
 Contains the planning established for the two defined development
 sprints.
@@ -249,7 +249,7 @@ Planning documentation does **not** represent completed implementation.
 
 ## Planning vs. Operationalization
 
-Frevity explicitly separates these concepts.
+freevity explicitly separates these concepts.
 
 ### Planning
 
@@ -283,7 +283,7 @@ The project prioritizes:
 
 ## MVP Scope
 
-The MVP planning covers the foundation required to move Frevity from
+The MVP planning covers the foundation required to move freevity from
 project initialization toward a production-ready web application.
 
 The work is organized into the **two defined development sprints**.
@@ -291,7 +291,7 @@ The work is organized into the **two defined development sprints**.
 The authoritative task breakdown is:
 
 ``` text
-arqc/Frevity-Trello-Plan-2-Sprints.md
+arqc/freevity-Trello-Plan-2-Sprints.md
 ```
 
 ## Architectural Evolution
@@ -320,4 +320,4 @@ This keeps the repository, implementation, and planning aligned.
 
 ------------------------------------------------------------------------
 
-&reg;2026 Frevity have all rights.
+&reg;2026 freevity have all rights.

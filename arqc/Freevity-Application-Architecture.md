@@ -1,4 +1,4 @@
-# Frevity --- Application Architecture
+# freevity --- Application Architecture
 
 ## 1. Architecture Identification
 
@@ -7,7 +7,7 @@
 > **Modular Monolith Frontend Architecture with Domain-Centric Layering
 > and Static-First Hybrid Rendering.**
 
-Frevity v0.1.0 is a single Next.js application containing two product
+freevity v0.1.0 is a single Next.js application containing two product
 surfaces:
 
 -   `/` --- Landing Page
@@ -19,7 +19,7 @@ service, or microservice architecture in the MVP.
 High-level model:
 
 ``` text
-                         FREVITY
+                         freevity
                             |
                     Next.js Application
                             |
@@ -159,7 +159,7 @@ It coordinates the domain but does not redefine mathematical rules.
 
 ## 4.3 Domain Layer
 
-Responsible for Frevity business logic.
+Responsible for freevity business logic.
 
 Examples:
 
@@ -201,7 +201,7 @@ The project starts with the Next.js-generated structure and evolves
 toward:
 
 ``` text
-frevity/
+freevity/
 |
 ├── app/
 │   ├── calculator/
@@ -303,7 +303,7 @@ No unnecessary routes should be introduced in v0.1.0.
 
 # 7. Rendering Strategy
 
-Frevity uses **static-first hybrid rendering**.
+freevity uses **static-first hybrid rendering**.
 
 ## Landing
 
@@ -432,7 +432,7 @@ CalculationResult
 
 # 10. Calculation Engine
 
-The calculation engine is the heart of Frevity.
+The calculation engine is the heart of freevity.
 
 It must be:
 
@@ -659,7 +659,7 @@ Future persistence may be introduced after product validation.
 
 There is intentionally **no separate backend** in the MVP.
 
-A backend becomes justified when Frevity requires:
+A backend becomes justified when freevity requires:
 
 -   authentication;
 -   persistent accounts;
@@ -709,7 +709,7 @@ Microservices would add:
 -   failure modes;
 -   development overhead.
 
-> Microservices solve a problem Frevity does not currently have.
+> Microservices solve a problem freevity does not currently have.
 
 ------------------------------------------------------------------------
 
@@ -777,7 +777,7 @@ without sufficient benefit.
 
 # 23. Why Not Full Clean Architecture?
 
-Frevity adopts the **principles** of separation but not heavyweight
+freevity adopts the **principles** of separation but not heavyweight
 Clean Architecture ceremony.
 
 We do not need a large structure of:
@@ -821,7 +821,7 @@ That is future scope.
 
 # 25. Why Next.js?
 
-Frevity has two different needs:
+freevity has two different needs:
 
 ``` text
 Marketing / SEO
@@ -945,7 +945,7 @@ The largest likely performance risks are:
 
 # 30. Design System
 
-Frevity brand colors:
+freevity brand colors:
 
 ``` text
 Primary       #1474E2
@@ -1220,7 +1220,7 @@ Git Repository
 Managed Next.js Hosting
        |
        v
-frevity.com
+freevity.com
        |
        v
 HTTPS
@@ -1235,7 +1235,7 @@ The MVP must be deployable without custom backend infrastructure.
 Canonical domain:
 
 ``` text
-frevity.com
+freevity.com
 ```
 
 Expected:
@@ -1257,7 +1257,7 @@ alternate redirected.
 
 # 41. Observability
 
-Frevity uses **Grafana Cloud** as its observability platform.
+freevity uses **Grafana Cloud** as its observability platform.
 
 The observability layer is external to the application domain and must not
 introduce dependencies into the calculation engines.
@@ -1344,7 +1344,7 @@ Future monetization is explicitly outside v0.1.0.
 
 # 43. Product Boundary
 
-Frevity v0.1.0 is:
+freevity v0.1.0 is:
 
 > A lightweight global web tool for estimating total landed cost and
 > understanding logistics cost reality for a shipment.
@@ -1543,9 +1543,9 @@ operational boundaries justify it.
 # 48. Final Architecture Diagram
 
 ``` text
-                         FREVITY
+                         freevity
                             |
-                    frevity.com
+                    freevity.com
                             |
                          Next.js
                             |
@@ -1579,7 +1579,7 @@ operational boundaries justify it.
 
 # 49. Final Architectural Statement
 
-Frevity is intentionally **not over-engineered**.
+freevity is intentionally **not over-engineered**.
 
 Its architecture is based on:
 
@@ -1603,7 +1603,7 @@ no external API dependency
 
 Therefore:
 
-> **Frevity uses a Next.js modular monolith with a domain-centric
+> **freevity uses a Next.js modular monolith with a domain-centric
 > calculation engine, static-first rendering, local interactive state,
 > shared internationalization/formatting modules, and externalized
 > concerns for analytics, SEO and advertising.**

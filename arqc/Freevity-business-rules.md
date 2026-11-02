@@ -1,14 +1,14 @@
-# Frevity — Business Rules
+# freevity — Business Rules
 
 ## 1. Purpose
 
-This document records the business decisions that define the initial monetary and geographic scope of Frevity's freight calculations.
+This document records the business decisions that define the initial monetary and geographic scope of freevity's freight calculations.
 
 It is the reference for future implementation, architecture, validation, and product decisions. Changes to these rules must be deliberate and reflected in this document.
 
 ## 2. MVP Business Scope
 
-Frevity will not attempt to support every country or every currency in the initial version.
+freevity will not attempt to support every country or every currency in the initial version.
 
 The MVP deliberately restricts **national freight calculations** to supported countries whose national currency belongs to this initial set:
 
@@ -43,7 +43,7 @@ For the MVP:
 | United States Dollar | USD | National freight |
 | Japanese Yen | JPY | National freight |
 
-Countries must be explicitly included in Frevity's supported-country configuration. Geographic region alone does not make a country eligible.
+Countries must be explicitly included in freevity's supported-country configuration. Geographic region alone does not make a country eligible.
 
 ### Brazil
 
@@ -53,11 +53,11 @@ Other South American countries are not automatically supported.
 
 ### Euro countries
 
-Frevity may support countries that use the Euro as their national currency. Being located in Europe alone does not make a country eligible; the country must be explicitly configured as supported.
+freevity may support countries that use the Euro as their national currency. Being located in Europe alone does not make a country eligible; the country must be explicitly configured as supported.
 
 ### United States Dollar
 
-USD is supported for national freight in countries explicitly configured by Frevity as national USD markets.
+USD is supported for national freight in countries explicitly configured by freevity as national USD markets.
 
 The MVP does not assume that an entire continent automatically uses USD.
 
@@ -69,7 +69,7 @@ Other Asian countries are not automatically supported.
 
 ## 4. Unsupported National Markets
 
-A country outside the Frevity supported-country configuration does **not** receive a national freight calculation in the MVP.
+A country outside the freevity supported-country configuration does **not** receive a national freight calculation in the MVP.
 
 The system must not:
 
@@ -116,7 +116,7 @@ International presentation currency = USD
 
 This applies regardless of the user's locale or the countries involved.
 
-The use of USD for international freight is a **Frevity business rule for the MVP**, not a universal rule of international commerce.
+The use of USD for international freight is a **freevity business rule for the MVP**, not a universal rule of international commerce.
 
 ## 6. Country, Locale, and Currency
 
@@ -271,7 +271,7 @@ The following are outside the current scope:
 
 ## 12. Decision Summary
 
-For the current Frevity MVP:
+For the current freevity MVP:
 
 1. **National freight is country-based.**
 2. **National currency is determined by the supported country.**

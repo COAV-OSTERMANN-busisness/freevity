@@ -1,6 +1,6 @@
-# Frevity -- Relatório de Encerramento da Sprint 1
+# freevity -- Relatório de Encerramento da Sprint 1
 
-**Projeto:** Frevity  
+**Projeto:** freevity  
 **Sprint:** Sprint 1  
 **Período planejado:** 29/08/2026 a 30/08/2026  
 **Encerramento real:** 05/10/2026  
@@ -11,7 +11,7 @@
 
 ## 1. Resumo Executivo
 
-A Sprint 1 do projeto Frevity teve como objetivo estabelecer a fundação técnica e funcional da aplicação, incluindo arquitetura, interface, internacionalização, domínio de cálculo, integração entre a Calculator e os engines, cálculos de frete e infraestrutura inicial de Quality Assurance.
+A Sprint 1 do projeto freevity teve como objetivo estabelecer a fundação técnica e funcional da aplicação, incluindo arquitetura, interface, internacionalização, domínio de cálculo, integração entre a Calculator e os engines, cálculos de frete e infraestrutura inicial de Quality Assurance.
 
 O período originalmente planejado foi de **29/08/2026 a 30/08/2026**. O encerramento real ocorreu em **05/10/2026**, representando um desvio significativo em relação ao planejamento inicial.
 
@@ -58,7 +58,7 @@ Essas ocorrências foram registradas como pendências conhecidas e deverão ser 
 
 # 2. Objetivos da Sprint
 
-A Sprint 1 teve como propósito construir a primeira fundação técnica utilizável do Frevity.
+A Sprint 1 teve como propósito construir a primeira fundação técnica utilizável do freevity.
 
 Os principais objetivos foram:
 
@@ -125,15 +125,15 @@ O desvio observado deverá ser utilizado como referência para melhorar as estim
 
 ## 4.1 Fundação do projeto
 
-A Sprint estabeleceu a fundação necessária para continuidade do desenvolvimento do Frevity.
+A Sprint estabeleceu a fundação necessária para continuidade do desenvolvimento do freevity.
 
 Entre os trabalhos realizados estão:
 
 - Project Initialization;
 - Application Architecture;
 - Git Workflow;
-- Frevity Design System;
-- Frevity Brand Assets;
+- freevity Design System;
+- freevity Brand Assets;
 - Internationalization Core;
 - Global Formatting Layer;
 - Calculation Domain Model;
@@ -145,7 +145,7 @@ Entre os trabalhos realizados estão:
 - Application Page Shell;
 - Calculator Form;
 - Calculator <-> Engine Integration;
-- evolução da arquitetura do Frevity;
+- evolução da arquitetura do freevity;
 - integração da infraestrutura necessária ao projeto;
 - QA.
 
@@ -180,8 +180,8 @@ A Sprint estabeleceu a base visual e estrutural da aplicação.
 
 Foram trabalhados:
 
-- Frevity Design System;
-- Frevity Brand Assets;
+- freevity Design System;
+- freevity Brand Assets;
 - Landing Page Structure;
 - Landing Responsive UI;
 - Application Page Shell;
@@ -914,7 +914,7 @@ Esse trabalho teve impacto transversal sobre componentes, cálculos, integraçã
 
 As fórmulas exigiram análise antes da implementação definitiva.
 
-No contexto do Frevity:
+No contexto do freevity:
 
 $$
 \boxed{
@@ -1447,7 +1447,7 @@ Calculation
 
 # 27. Conclusão
 
-A Sprint 1 ultrapassou significativamente o prazo inicialmente planejado, porém estabeleceu a fundação técnica e funcional do Frevity.
+A Sprint 1 ultrapassou significativamente o prazo inicialmente planejado, porém estabeleceu a fundação técnica e funcional do freevity.
 
 O principal aprendizado não é simplesmente que a Sprint atrasou.
 

@@ -1,6 +1,6 @@
-# Frevity — Especificação matemática do frete
+# freevity — Especificação matemática do frete
 
-**Destino:** `/arqc/Frevity-math.md`  
+**Destino:** `/arqc/freevity-math.md`  
 **Estado:** fórmula rodoviária aprovada; aérea e marítima pendentes.  
 **Restrição:** os trechos TypeScript abaixo documentam a implementação futura. Nenhum arquivo do aplicativo será alterado antes de as três fórmulas estarem aprovadas.
 
@@ -455,7 +455,7 @@ function calculateAirMath(input: AirMathInput): AirMathResult {
 
 O frete marítimo utiliza a moeda determinada pelo **escopo da operação**, e não obrigatoriamente USD. Operações nacionais usam a moeda configurada para o país (BRL, USD, EUR ou JPY); operações internacionais utilizam USD. A tarifa informada, o frete mínimo opcional e os adicionais devem estar na mesma moeda da operação. Não há conversão cambial automática.
 
-As tarifas são informadas pelo usuário e representam a cotação aplicável à operação. A Frevity não calcula cotações de armadores, não presume taxas portuárias e não estabelece automaticamente mínimos contratuais.
+As tarifas são informadas pelo usuário e representam a cotação aplicável à operação. A freevity não calcula cotações de armadores, não presume taxas portuárias e não estabelece automaticamente mínimos contratuais.
 
 **### 4.1 Convenções e grandezas**
 
@@ -499,7 +499,7 @@ Se o frete mínimo não for informado, considerar $F_{\min}=0$ **somente interna
 
 A base alternativa **valor fixo** permanece válida: $F_c=T_{\mathrm{fixa}}$, uma vez por operação, **sem multiplicação por $N_c$**. As bases peso, volume e peso tarifável não devem ser interpretadas como tarifa FCL por contêiner.
 
-O tipo/equipamento do contêiner influencia comercialmente a cotação, mas a Frevity utilizará a tarifa fornecida pelo usuário; não introduzirá estimativa automática de preço por contêiner de 20 ou 40 pés.
+O tipo/equipamento do contêiner influencia comercialmente a cotação, mas a freevity utilizará a tarifa fornecida pelo usuário; não introduzirá estimativa automática de preço por contêiner de 20 ou 40 pés.
 
 **### 4.3 Fórmulas matemáticas — LCL**
 

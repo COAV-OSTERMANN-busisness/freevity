@@ -1,0 +1,29 @@
+{
+  "name": "frevity-tests",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run unit",
+    "test:unit:calculation:landedCost": "vitest run unit/calculation/landedCost",
+    "test:unit:calculation:freight": "vitest run unit/calculation/freight",
+    "test:e2e": "cypress run",
+    "test:e2e:open": "cypress open"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^28.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@types/node": "^26.6.4",
+    "cypress": "^15.21.1",
+    "esbuild": "^0.28.2",
+    "typescript": "^5",
+    "vitest": "^4.1.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/**/*.test.ts"
+    ]
+  }
+}
